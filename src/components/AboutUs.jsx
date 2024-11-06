@@ -1,5 +1,5 @@
 import React from 'react';
-import image from "../../src/Image/egg.jpg";
+import image from "../assets/Image/egg.jpg";
 
 import { TitleWithLines } from "../index";
 
@@ -17,14 +17,10 @@ const AboutUs = () => {
           <img src={image} alt="Slider" className='border rounded-[14px] w-full h-auto' />
         </div>
       </div>
-
-
-
       <div className='text-center mb-16' >
         <h2 className='text-xl font-bold my-4'>Thành tích clb</h2>
         <p className=" text-lg text-center">Đây là phần flex thành tích clb</p>
       </div>
-
       <div className='text-center mb-16'>
         <h2 className='text-xl font-bold my-8 '>Ban chủ nhiệm hiện tại</h2>
         <div className='grid grid-cols-2 gap-x-8 md:flex items-center justify-around '>
@@ -39,9 +35,6 @@ const AboutUs = () => {
           ))}
         </div>
       </div>
-
-
-
     </div>
   )
 }
