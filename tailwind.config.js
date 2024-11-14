@@ -19,6 +19,8 @@ module.exports = {
         pastelOrange: '#FFB3A6',
         pastelRed: '#FF9F9F',
         pastelGray: '#D3D3D3',
+        pinkLotus: '#FF69B4',
+        whiteHover: 'F0F0F0',
       },
       backgroundImage: {
         'blue-purple': 'linear-gradient(to right, #007BFF, #6F42C1)',
@@ -47,6 +49,9 @@ module.exports = {
         '10p': '10%',
         '15p': '15%',
       },
+      hover:{
+        'button_transit': "bg-blue-700 transition duration-300 ease-in-out",
+      }
     },
   },
   plugins: [],

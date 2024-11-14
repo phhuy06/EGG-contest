@@ -4,27 +4,31 @@ import logo from '../assets/Image/logo.png'
 import { Btn, Nav } from '../index.js'
 
 const Navbar = props => {
-  const { isMobile } = props
-  const [openMenu, setOpenMenu] = useState(false)
-  const handleMenu = () => {
+const { isMobile } = props
+const [openMenu, setOpenMenu] = useState(false)
+const handleMenu = () => {
     setOpenMenu(!openMenu)
-  }
+}
 
   return (
-    <nav className="flex items-center border-[1px] border-solid border-black rounded-full mb-16 py-2 px-4">
-      <div className="flex items-center mr-auto">
+    <nav className="fixed flex justify-center top-0 left-0 right-0
+                    items-center border-[1px] border-solid border-black 
+                    my-30 px-4 shadow-md
+                    bg-gradient-to-b from-white via-red-200 to-white
+                    z-50">
+      <div className="flex items-center mr-auto ">
         <div className="flex justify-center">
-          <img src={logo} alt="LOGO" className="w-8 h-auto" />
+          <img src={logo} alt="LOGO" className="w-10 h-10 cursor-pointer" />
         </div>
-        <div className="ml-4 text-[12px] ">
+        <div className="ml-2 text-[20px] ">
           <h1>
-            <span className="font-bold">EGG CLUB</span> <br></br>{' '}
-            <span className="hidden md:block text-[10px]">CLB Sáng tạo Công Nghệ</span>
+            <span className="font-bold cursor-pointer">EGG CLUB</span> <br></br>
+            <span className="hidden md:block text-[13px]">CLB Sáng tạo Công Nghệ</span>
           </h1>
         </div>
       </div>
       {!isMobile && (
-        <div className="flex items-center justify-end gap-4 font-bold ">
+        <div className="flex items-center justify-end font-bold ">
           <Nav />
           <Btn />
         </div>
@@ -40,12 +44,10 @@ const Navbar = props => {
         </div>
       )}
       {openMenu && isMobile && (
-        <div className="absolute mt-[100px] bg-blue-pink px-[12px] py-2 text-13 rounded-xl">
-          <ul>
-            <li className="cursor-pointer font-bold">About Us</li>
-            <li className="cursor-pointer font-bold">Events</li>
-            <li className="cursor-pointer font-bold">Humans of EGG</li>
-          </ul>
+        <div className="absolute flex flex-col items-start space-y-4 bg-white border-[2px] border-solid border-black right-0 top-0 py-10 pr-20 pl-5 mt-[40px]">
+          <button className="cursor-pointer font-bold hover:text-primaryColor">About Us</button>
+          <button className="cursor-pointer font-bold hover:text-primaryColor">Events</button>
+          <button className="cursor-pointer font-bold hover:text-primaryColor">Humans Of EGG</button>
         </div>
       )}
     </nav>

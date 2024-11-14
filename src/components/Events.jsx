@@ -6,7 +6,7 @@ const Post = () => {
   return (
     <div>
       {TitleWithLines('Events')}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-24 mb-16 ">
+      <div className="grid grid-cols-1 my-20 md:grid-cols-3 gap-24 mb-16 ">
         {[...Array(3)].map((_, index) => (
           <div key={index} className="relative rounded-lg overflow-hidden shadow-lg ">
             <img src={image} alt="Post's Image" className="w-full h-64 object-cover" />

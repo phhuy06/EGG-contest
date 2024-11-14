@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import { MdSunny } from "react-icons/md";
-import { IoMoon } from "react-icons/io5";
+import './index.css';
 
 
 export const TitleWithLines = (title) => (
@@ -16,18 +14,18 @@ export const TitleWithLines = (title) => (
 
 export const Nav = () => (
   <div className='flex items-center gap-8 mr-16'>
-    <div className='cursor-pointer hover:text-primaryColor'>About Us</div>
-    <div className='cursor-pointer hover:text-primaryColor'>Events</div>
-    <div className='cursor-pointer hover:text-primaryColor'>Humans of EGG</div>
+    <button className="cursor-pointer font-bold hover:text-primaryColor"><a href="#section1"></a>About Us</button>
+    <button className="cursor-pointer font-bold hover:text-primaryColor"><a href="#section2"></a>Events</button>
+    <button className="cursor-pointer font-bold hover:text-primaryColor"><a href="#section3"></a>Humans Of EGG</button>
   </div>
 );
 
 
 export const Btn = () => (
   <div className='flex items-center gap-1'>
-    <MdSunny size={"18px"} color='red' className='cursor-pointer' />
-    <div className='text-[12px] bg-red-50 p-[1.5px] px-2 rounded-xl cursor-pointer'>Sign In</div>
-    <div className='text-[12px] bg-red-200 p-[1.5px] px-2 rounded-xl cursor-pointer'>Register</div>
+    <button className='text-[14px] bg-red-50 p-[1.5px] px-3 py-1 rounded-md cursor-pointer
+                      bg-white
+                      hover:bg-gray-100 transition duration-300 ease-in-out'>Đăng nhập</button>
   </div>
 );
 
