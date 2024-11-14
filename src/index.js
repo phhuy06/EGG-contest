@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import { MdSunny } from "react-icons/md";
-import { IoMoon } from "react-icons/io5";
+import App from './App';
+import './index.css';
 
 
 export const TitleWithLines = (title) => (

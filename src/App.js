@@ -1,11 +1,11 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
 import AboutUs from './components/AboutUs';
 import Events from './components/Events';
-import HumansOfEGG from './components/HumansOfEGG';
 import Footer from './components/Footer';
 import { useIsMobile } from './components/hooks/useIsMobile';
+import HumansOfEGG from './components/HumansOfEGG';
+import Navbar from './components/Navbar';
 
 
 function App() {
@@ -25,4 +25,3 @@ function App() {
 }
 
 export default App;
-
