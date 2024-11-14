@@ -7,7 +7,7 @@ const HumansOfEGG = () => {
   const [detailInfor, setDetailInfor] = useState(null)
 
   return (
-    <div className="container mx-auto px-4 mb-16">
+    <div className="container mx-auto px-4 mb-16 ">
       {TitleWithLines('Humans Of EGG')}
 
       <div className=" grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-2 border-blue-200">

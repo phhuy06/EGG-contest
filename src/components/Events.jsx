@@ -44,7 +44,7 @@ Nguồn ảnh: Nobel Prize`,
   return (
     <div>
       {TitleWithLines('Events')}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-24 mb-16 ">
+      <div className="grid grid-cols-1 my-20 md:grid-cols-3 gap-24 mb-16 ">
         {activePost !== null ? (
           <div className="col-span-1 md:col-span-3">
             <div className="relative rounded-lg overflow-hidden shadow-lg p-4 bg-white w-full">
