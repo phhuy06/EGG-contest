@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+import AboutUs from './components/AboutUs';
+import Events from './components/Events';
+import Footer from './components/Footer';
+import { useIsMobile } from './components/hooks/useIsMobile';
+import HumansOfEGG from './components/HumansOfEGG';
+import Navbar from './components/Navbar';
+
 
 function App() {
+  const { isMobile } = useIsMobile()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-white via-red-200 to-white  overflow-x-hidden">
+      <div className="flex-grow mx-5p font-montserrat mt-8">
+        <Navbar isMobile={isMobile}/>
+        {!isMobile && (
+        <div className="h-16">
+          
+        </div>
+      )}
+        <AboutUs/>
+        <Events/>
+        <HumansOfEGG/>
+        <Footer />
+      </div>
+  
     </div>
   );
 }
