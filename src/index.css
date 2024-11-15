@@ -6,4 +6,9 @@
   .title {
     @apply text-center py-8 text-3xl md:text-5xl font-extrabold text-primaryColor tracking-wide hover:scale-110 transition duration-300;
   }
+@layer components {
+  .title {
+    @apply text-center py-8 text-3xl md:text-5xl font-extrabold text-primaryColor tracking-wide hover:scale-110 transition duration-300;
+  }
 }
+
